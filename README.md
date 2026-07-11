@@ -3,12 +3,14 @@
 </p>
 
 <p align="center">
-  <img src="assets/typing.svg" alt="Typing Roles" width="450" />
+  <img src="./assets/banner.svg" alt="banner" />
 </p>
 
-<div align="center">
-  <h3>Hey there, I'm Thejus! 👋</h3>
-  <p>
+<h1 align="center">Hi, I'm Thejus 👋</h1>
+
+<p align="center">
+  Full-Stack Developer • Cloud/DevOps • AI Builder
+</p>
     I am a passionate software developer focused on building beautiful, highly performant web applications. I love bridging the gap between pixel-perfect design and solid backend engineering.
   </p>
 </div>
