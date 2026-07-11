@@ -1,8 +1,4 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Thejus Banner" width="100%" />
-</p>
-
-<p align="center">
   <img src="./assets/banner.svg" alt="banner" />
 </p>
 
