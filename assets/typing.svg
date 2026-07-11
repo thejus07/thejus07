@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 50" width="100%" height="100%">
+  <defs>
+    <!-- Clip Path for typing reveal -->
+    <clipPath id="typing-clip">
+      <rect id="clip-rect" x="0" y="0" width="0" height="50" />
+    </clipPath>
+  </defs>
+
+  <style>
+    .typing-text {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18px;
+      font-weight: bold;
+      fill: #ff0844;
+      letter-spacing: 1px;
+      text-shadow: 0 0 5px rgba(255, 8, 68, 0.5);
+    }
+
+    .cyan-text {
+      fill: #00f2fe;
+      text-shadow: 0 0 5px rgba(0, 242, 254, 0.5);
+    }
+
+    .cursor {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 20px;
+      font-weight: bold;
+      fill: #00f2fe;
+      animation: blink 0.8s infinite;
+    }
+
+    .cursor-pink {
+      fill: #ff0844;
+      animation: blink 0.8s infinite;
+    }
+
+    /* Keyframes for the typing clip-rect */
+    @keyframes type-reveal {
+      0% { width: 0; }
+      5% { width: 0; }
+      40% { width: 500px; }
+      80% { width: 500px; }
+      90% { width: 0; }
+      100% { width: 0; }
+    }
+
+    /* Keyframes for blinking cursor */
+    @keyframes blink {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+
+    /* Keyframes for rotating phrases */
+    @keyframes phrase1-fade {
+      0%, 33.32% { opacity: 1; }
+      33.33%, 100% { opacity: 0; }
+    }
+
+    @keyframes phrase2-fade {
+      0%, 33.32% { opacity: 0; }
+      33.33%, 66.65% { opacity: 1; }
+      66.66%, 100% { opacity: 0; }
+    }
+
+    @keyframes phrase3-fade {
+      0%, 66.65% { opacity: 0; }
+      66.66%, 99.99% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    #clip-rect {
+      animation: type-reveal 4s infinite;
+    }
+
+    .phrase-g1 {
+      animation: phrase1-fade 12s infinite;
+    }
+
+    .phrase-g2 {
+      animation: phrase2-fade 12s infinite;
+    }
+
+    .phrase-g3 {
+      animation: phrase3-fade 12s infinite;
+    }
+  </style>
+
+  <!-- Container Group centered vertically -->
+  <g transform="translate(10, 30)">
+    <!-- Phrase 1 -->
+    <g class="phrase-g1" clip-path="url(#typing-clip)">
+      <text x="0" y="0" class="typing-text cyan-text">⚡ Full-Stack Developer</text>
+      <text x="235" y="0" class="cursor">|</text>
+    </g>
+
+    <!-- Phrase 2 -->
+    <g class="phrase-g2" clip-path="url(#typing-clip)">
+      <text x="0" y="0" class="typing-text">🚀 UI/UX &amp; Design Enthusiast</text>
+      <text x="290" y="0" class="cursor-pink">|</text>
+    </g>
+
+    <!-- Phrase 3 -->
+    <g class="phrase-g3" clip-path="url(#typing-clip)">
+      <text x="0" y="0" class="typing-text cyan-text">🔧 Building Scalable Web Apps</text>
+      <text x="295" y="0" class="cursor">|</text>
+    </g>
+  </g>
+</svg>
